@@ -191,7 +191,7 @@ refais:
 noprob:
     shl     al,4
     mov     bl,al
-    add     bl,ah
+    cmp     bl,ah
     mov     [ecx], bl
     inc     ecx
     inc     edx
@@ -209,7 +209,7 @@ degag:
     shr ebx,10h
     xchg bl,bh
     add eax,ebx
-    mov ebx,[esp+8]
+    add ebx,[esp+8]
     mov [ebx],eax
 ret
 
