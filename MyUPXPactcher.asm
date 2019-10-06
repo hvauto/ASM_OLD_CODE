@@ -191,7 +191,7 @@ refais:
 noprob:
     shl     al,4
     mov     bl,al
-    add     bl,ah
+    cmp     bl,ah
     mov     [ecx], bl
     inc     ecx
     inc     edx
