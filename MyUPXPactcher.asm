@@ -209,7 +209,7 @@ degag:
     shr ebx,10h
     xchg bl,bh
     add eax,ebx
-    mov ebx,[esp+8]
+    add ebx,[esp+8]
     mov [ebx],eax
 ret
 
