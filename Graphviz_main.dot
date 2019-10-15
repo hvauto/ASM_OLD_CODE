@@ -1,0 +1,50 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x00401882" [URL="main/0x00401882", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="(fcn) main 348\l  int main (int argc, char **argv, char **envp);\l; var int32_t var_1ch @ ebp-0x1c\l; var int32_t var_18h @ ebp-0x18\l; var int32_t var_14h @ ebp-0x14\l; var int32_t var_10h @ ebp-0x10\l; var uint32_t var_ch @ ebp-0xc\l; var int32_t var_8h @ ebp-0x8\l; var int32_t var_4h @ ebp-0x4\l; arg int32_t arg_8h @ ebp+0x8\l; arg int32_t arg_ch @ ebp+0xc\l0x00401882      push    ebp\l0x00401883      mov     ebp, esp\l0x00401885      sub     esp, 0x1c\l0x00401888      push    ebx\l0x00401889      push    esi\l0x0040188a      push    edi\l0x0040188b      call    fcn.0040144f\l0x00401890      push    0x422538   ; '8%B' ; LPCWSTR lpPathName\l0x00401895      call    dword [sym.imp.KERNEL32.dll_SetDllDirectoryW] ; 0x4221e8 ; \"~e\\x02\" ; BOOL SetDllDirectoryW(LPCWSTR lpPathName)\l0x0040189b      mov     edi, dword [arg_8h]\l0x0040189e      xor     ecx, ecx\l0x004018a0      push    4          ; 4\l0x004018a2      pop     edx\l0x004018a3      lea     eax, [edi + 1]\l0x004018a6      mul     edx\l0x004018a8      seto    cl\l0x004018ab      neg     ecx\l0x004018ad      or      ecx, eax\l0x004018af      push    ecx\l0x004018b0      call    dword [sym.imp.mozglue.dll_moz_xmalloc] ; 0x4223b8 ; \"nd\\x02\"\l0x004018b6      mov     ebx, eax\l0x004018b8      pop     ecx\l0x004018b9      test    ebx, ebx\l0x004018bb      jne     0x4018c5\l"]
+	"0x004018bd" [URL="main/0x004018bd", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004018bd      push    0x7f       ; 127\l0x004018bf      pop     eax\l0x004018c0      jmp     0x4019d7\l"]
+	"0x004018c5" [URL="main/0x004018c5", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004018c5      xor     eax, eax\l0x004018c7      mov     dword [var_ch], eax\l0x004018ca      mov     dword [var_8h], eax\l0x004018cd      test    edi, edi\l0x004018cf      jle     0x401957\l"]
+	"0x004018d5" [URL="main/0x004018d5", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004018d5      mov     ecx, dword [arg_ch]\l0x004018d8      mov     eax, ebx\l0x004018da      sub     ecx, ebx\l0x004018dc      mov     dword [var_4h], eax\l0x004018df      mov     dword [arg_ch], ecx\l"]
+	"0x004018e2" [URL="main/0x004018e2", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004018e2      mov     esi, dword [ecx + eax]\l0x004018e5      mov     ecx, esi\l0x004018e7      lea     edx, [ecx + 2]\l"]
+	"0x004018ea" [URL="main/0x004018ea", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004018ea      mov     ax, word [ecx]\l0x004018ed      add     ecx, 2\l0x004018f0      cmp     ax, word [var_ch]\l0x004018f4      jne     0x4018ea\l"]
+	"0x004018f6" [URL="main/0x004018f6", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004018f6      sub     ecx, edx\l0x004018f8      sar     ecx, 1\l0x004018fa      imul    eax, ecx, 3\l0x004018fd      mov     dword [var_10h], ecx\l0x00401900      inc     eax\l0x00401901      push    eax\l0x00401902      call    dword [sym.imp.mozglue.dll_moz_xmalloc] ; 0x4223b8 ; \"nd\\x02\"\l0x00401908      mov     dword [var_14h], eax\l0x0040190b      pop     ecx\l0x0040190c      test    eax, eax\l0x0040190e      je      0x401949\l"]
+	"0x00401910" [URL="main/0x00401910", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401910      push    dword [var_10h]\l0x00401913      lea     ecx, [var_1ch]\l0x00401916      mov     dword [var_1ch], eax\l0x00401919      push    esi\l0x0040191a      mov     dword [var_18h], eax\l0x0040191d      call    fcn.00401706\l0x00401922      mov     eax, dword [var_18h]\l0x00401925      xor     ecx, ecx\l0x00401927      mov     edx, dword [var_8h]\l0x0040192a      push    4          ; 4\l0x0040192c      inc     edx\l0x0040192d      mov     byte [eax], cl\l0x0040192f      mov     eax, dword [var_4h]\l0x00401932      mov     ecx, dword [var_14h]\l0x00401935      mov     dword [var_8h], edx\l0x00401938      mov     dword [eax], ecx\l0x0040193a      pop     ecx\l0x0040193b      add     eax, ecx\l0x0040193d      mov     dword [var_4h], eax\l0x00401940      cmp     edx, edi\l0x00401942      jge     0x401955\l"]
+	"0x00401944" [URL="main/0x00401944", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401944      mov     ecx, dword [arg_ch]\l0x00401947      jmp     0x4018e2\l"]
+	"0x00401949" [URL="main/0x00401949", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401949      mov     eax, dword [var_4h]\l0x0040194c      xor     ecx, ecx\l0x0040194e      mov     dword [eax], ecx\l0x00401950      jmp     0x4018bd\l"]
+	"0x00401955" [URL="main/0x00401955", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401955      xor     eax, eax\l"]
+	"0x00401957" [URL="main/0x00401957", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401957      mov     dword [ebx + edi*4], eax\l0x0040195a      xor     ecx, ecx\l0x0040195c      push    4          ; 4\l0x0040195e      pop     edx\l0x0040195f      lea     eax, [edi + 1]\l0x00401962      mul     edx\l0x00401964      seto    cl\l0x00401967      neg     ecx\l0x00401969      or      ecx, eax\l0x0040196b      push    ecx\l0x0040196c      call    dword [sym.imp.mozglue.dll_moz_xmalloc] ; 0x4223b8 ; \"nd\\x02\"\l0x00401972      mov     dword [var_14h], eax\l0x00401975      pop     ecx\l0x00401976      test    eax, eax\l0x00401978      jne     0x401988\l"]
+	"0x0040197a" [URL="main/0x0040197a", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x0040197a      push    ebx\l0x0040197b      push    edi\l0x0040197c      call    fcn.004010bc\l0x00401981      pop     ecx\l0x00401982      pop     ecx\l0x00401983      jmp     0x4018bd\l"]
+	"0x00401988" [URL="main/0x00401988", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401988      test    edi, edi\l0x0040198a      jle     0x4019a6\l"]
+	"0x0040198c" [URL="main/0x0040198c", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x0040198c      mov     edx, ebx\l0x0040198e      mov     esi, edi\l0x00401990      push    4          ; 4\l0x00401992      mov     ecx, eax\l0x00401994      sub     edx, eax\l0x00401996      pop     edi\l"]
+	"0x00401997" [URL="main/0x00401997", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x00401997      mov     eax, dword [edx + ecx]\l0x0040199a      mov     dword [ecx], eax\l0x0040199c      add     ecx, edi\l0x0040199e      sub     esi, 1\l0x004019a1      jne     0x401997\l"]
+	"0x004019a3" [URL="main/0x004019a3", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004019a3      mov     edi, dword [arg_8h]\l"]
+	"0x004019a6" [URL="main/0x004019a6", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004019a6      push    str.PATH   ; 0x42253c ; \"PATH\" ; const char *name\l0x004019ab      call    dword [sym.imp.api_ms_win_crt_environment_l1_1_0.dll_getenv] ; 0x4222c8 ; \"hv\\x02\" ; char *getenv(const char *name)\l0x004019b1      call    dword [sym.imp.api_ms_win_crt_environment_l1_1_0.dll___p__environ] ; 0x4222cc ; \"Xv\\x02\"\l0x004019b7      push    dword [eax]\l0x004019b9      push    ebx\l0x004019ba      push    edi\l0x004019bb      call    fcn.004012a7\l0x004019c0      push    ebx        ; void *ptr\l0x004019c1      mov     esi, eax\l0x004019c3      call    dword [sym.imp.mozglue.dll_free] ; 0x4223a4 ; \"fd\\x02\" ; void free(void *ptr)\l0x004019c9      push    dword [var_14h]\l0x004019cc      push    edi\l0x004019cd      call    fcn.004010bc\l0x004019d2      add     esp, 0x1c\l0x004019d5      mov     eax, esi\l"]
+	"0x004019d7" [URL="main/0x004019d7", fillcolor="#20e0b0",color="#20e0b0", fontname="Courier",label="0x004019d7      pop     edi\l0x004019d8      pop     esi\l0x004019d9      pop     ebx\l0x004019da      mov     esp, ebp\l0x004019dc      pop     ebp\l0x004019dd      ret\l"]
+	"0x00401882" -> "0x004018c5" [color="#bae67e"];
+	"0x00401882" -> "0x004018bd" [color="#f07178"];
+	"0x004018bd" -> "0x004019d7" [color="#55b4d4"];
+	"0x004018c5" -> "0x00401957" [color="#bae67e"];
+	"0x004018c5" -> "0x004018d5" [color="#f07178"];
+	"0x004018d5" -> "0x004018e2" [color="#55b4d4"];
+	"0x004018e2" -> "0x004018ea" [color="#55b4d4"];
+	"0x004018ea" -> "0x004018ea" [color="#bae67e"];
+	"0x004018ea" -> "0x004018f6" [color="#f07178"];
+	"0x004018f6" -> "0x00401949" [color="#bae67e"];
+	"0x004018f6" -> "0x00401910" [color="#f07178"];
+	"0x00401910" -> "0x00401955" [color="#bae67e"];
+	"0x00401910" -> "0x00401944" [color="#f07178"];
+	"0x00401944" -> "0x004018e2" [color="#55b4d4"];
+	"0x00401949" -> "0x004018bd" [color="#55b4d4"];
+	"0x00401955" -> "0x00401957" [color="#55b4d4"];
+	"0x00401957" -> "0x00401988" [color="#bae67e"];
+	"0x00401957" -> "0x0040197a" [color="#f07178"];
+	"0x0040197a" -> "0x004018bd" [color="#55b4d4"];
+	"0x00401988" -> "0x004019a6" [color="#bae67e"];
+	"0x00401988" -> "0x0040198c" [color="#f07178"];
+	"0x0040198c" -> "0x00401997" [color="#55b4d4"];
+	"0x00401997" -> "0x00401997" [color="#bae67e"];
+	"0x00401997" -> "0x004019a3" [color="#f07178"];
+	"0x004019a3" -> "0x004019a6" [color="#55b4d4"];
+	"0x004019a6" -> "0x004019d7" [color="#55b4d4"];
+}
