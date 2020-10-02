@@ -1,7 +1,3 @@
-;lame int handler offset changer to try and hide winice from detection 
-;freeware, 'coded' 02-02-2000 by r!sc
-;use at your 0wn risk 
-
 .386P
 .MODEL FLAT, STDCALL
 
